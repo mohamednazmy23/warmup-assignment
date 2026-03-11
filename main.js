@@ -194,34 +194,6 @@ function setBonus(textFile, driverID, date, newValue) {
 // month: (typeof string) formatted as mm or m
 // Returns: number (-1 if driverID not found)
 // ============================================================
-// function countBonusPerMonth(textFile, driverID, month) {
-//     // TODO: Implement this function
-
-//     let rows = fs.readFileSync(textFile,"utf8").trim().split("\n");
-
-//     let count = 0;
-//     let found = false;
-
-//     month = Number(month);
-
-//     for(let row of rows){
-
-//         let cols = row.split(",");
-
-//         if(cols[0]===driverID){
-
-//             found = true;
-
-//             let m = Number(cols[2].split("-")[1]);
-
-//             if(m===month && cols[9]==="true"){
-//                 count++;
-//             }
-//         }
-//     }
-
-//     return found ? count : -1;
-// }
 
 function countBonusPerMonth(textFile, driverID, month) {
 
